@@ -1,0 +1,61 @@
+<div class="container">
+	<h3>Введите имя игрока</h3>
+
+	<div class="find">
+		<input type="text" placeholder="Поиск" value="Фросч">
+		<a class="waves-effect waves-light btn-large ajax_profile">Поиск</a>
+	</div>	
+	<div class="checks">
+		<p>
+      	<label>
+      		<input class="with-gap" name="group1" type="radio" value="1" checked />
+      		<span>Aльфа</span>
+      	</label>
+   	</p>
+     	<p>
+      	<label>
+        		<input class="with-gap" name="group1" type="radio" value="2" />
+        		<span>Браво</span>
+      	</label>
+    	</p>
+     	<p>
+      	<label>
+        		<input class="with-gap" name="group1" type="radio" value="3" />
+        		<span>Чарли</span>
+      	</label>
+    	</p>
+	</div>
+	 
+
+	<div class="dataGamer">
+		<h4 id="nickname" ></h4>
+		<h5>Ранг: <span id="rank_id"></span></h5>
+		<h5>Oпыт: <span id="experience"></span></h5>
+		<h5>Убийств: <span id="kills"></span></h5>
+		<h5>Смертей: <span id="death"></span></h5>
+		<h5>Статистика PVP: <span id="pvp"></span></h5>
+
+	</div>
+	
+
+<div class="cssload-dots load">
+	<div class="cssload-dot"></div>
+	<div class="cssload-dot"></div>
+	<div class="cssload-dot"></div>
+	<div class="cssload-dot"></div>
+	<div class="cssload-dot"></div>
+</div>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<filter id="goo">
+			<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
+			<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix>
+			<!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
+		</filter>
+	</defs>
+</svg>
+	
+
+</div>
+
