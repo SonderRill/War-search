@@ -97,6 +97,8 @@ svg {
 	top: 150px;
 }
 
+
+
 @media screen and (max-width: 1000px) {
 	.cssload-dot {
 		width: 0;

@@ -9,22 +9,22 @@ $('.ajax_profile').on('click', () => {
 	$('.load').css('display', 'block')
 	$('svg').css('display', 'block')
 
-	const proxyurl = "https://hidden-hollows-62277.herokuapp.com/";
-	const url = "http://api.warface.ru/achievement/catalog";
+	let name = $('input').val()
+	let server = $('input[name="group1"]:checked').val()
 
+
+	const url = `http://api.warface.ru/user/stat/?name=${encodeURIComponent(name)}&server=${server}`;
+	const proxyurl = "https://cors-anywhere.herokuapp.com/";
 	// $('.checks p label input').on('chage', function() {
 	// 	console.log($('input[name=group1]:checked').val())
 	// })
 	
 
-	let name = $('input').val()
-	let server = $('input[name="group1"]:checked').val()
-
 	$('.dataGamer').css('display', 'none')
 	$.ajax({
 		type:'POST',
 		dataType: 'json',
-		url: proxyurl + `http://api.warface.ru/user/stat/?name=${encodeURIComponent(name)}&server=${server}`,
+		url: proxyurl + url,
 
 		success: (response) => {
 			$('.dataGamer').css('display', 'block')
