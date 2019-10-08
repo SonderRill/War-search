@@ -105,6 +105,10 @@ svg {
 		left: 0;
 		top: 200px;
 	}
+	.checks {
+		margin-top: 10px;
+		justify-content: center;
+	}
 }
 
 .cssload-dot:before {
