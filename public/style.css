@@ -106,8 +106,11 @@ svg {
 		top: 200px;
 	}
 	.checks {
-		margin-top: 10px;
+		margin-top: 7px;
 		justify-content: center;
+	}
+	.ajax_profile {
+		margin-top: 5px
 	}
 }
 
