@@ -26,15 +26,56 @@
     	</p>
 	</div>
 	 
-
+	<h4 id="nickname" class="center"></h4>
 	<div class="dataGamer">
-		<h4 id="nickname" ></h4>
-		<h5>Ранг: <span id="rank_id"></span></h5>
-		<h5>Oпыт: <span id="experience"></span></h5>
-		<h5>Убийств: <span id="kills"></span></h5>
-		<h5>Смертей: <span id="death"></span></h5>
-		<h5>Статистика PVP: <span id="pvp"></span></h5>
+		<div class="flex">
+			<div class="obsh">
+				<h4 class="title_res center">Общее</h4>
+				<h5>Ранг <span id="rank_id"></span></h5>
+				<h5>Oпыт <span id="experience"></span></h5>
+				<h5 class="klan">Клан <span id="clan_name"></span></h5>
+			 	<h5>Всего убийств <span id='main_kills'></span></h5>
+				<h5>Всего смертей <span id='main_death'></span></h5>
+			 	<h5>Убийств друзей <span id='friendly_kills'></span></h5>
 
+			 	<h5>Часов в игре <span id="playtime_h"></span></h5>
+			 	<h5>Пополнено БП <span id='player_ammo_restored'></span></h5>
+			 	<h5>Восстановлено OЗ <span id='player_heal'></span></h5>
+			 	<h5>Реанимированно игроков <span id='player_resurrect_made'></span></h5>
+				<h5>Восстановлено ОБ <span id='player_repair'></span></h5>
+				
+				
+			</div>
+
+			<div class="pvp">
+				<h4 class="title_res center">PVP</h4>
+				<h5>Убийств <span id="kills"></span></h5>
+				<h5>Смертей <span id="death"></span></h5>
+				<h5>Соотношение у/с <span id="pvp"></span></h5>
+				<h5>Сыграно матчей <span id="main_pvp_all"></span></h5>
+				<h5>Количество побед <span id="pvp_wins"></span></h5>
+				<h5>Количество поражений <span id="pvp_lost"></span></h5>
+				<h5>Сыграно вничью <span id="player_sessions_draw"></span></h5>
+				<h5>Соотношение матчей <span id="pvpwl"></span></h5>
+				<h5>Исключений из боя <span id="player_sessions_kicked"></span></h5>
+				<h5>Прервано матчей <span id="player_sessions_left"></span></h5>
+				<h5>Любимый класс <span id="favoritPVP"></span></h5>
+				<h4 class="game_class">Штурмовик</h4>
+			</div>
+
+			<div class="pve">
+				<h4 class="title_res center">PVE</h4>
+				<h5>Ранг <span id="rank_id"></span></h5>
+				<h5>Oпыт <span id="experience"></span></h5>
+				<h5>Убийств <span id="kills"></span></h5>
+				<h5>Смертей <span id="death"></span></h5>
+				<h5>Статистика PVP <span id="pvp"></span></h5>
+				<h5>Часов в игре <span id="playtime_h"></span></h5>
+				<h5 class="klan">Клан <span id="clan_name"></span></h5>
+			</div>
+		</div>
+		
+		
 	</div>
 	
 
@@ -51,7 +92,7 @@
 		<filter id="goo">
 			<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
 			<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix>
-			<!-- <feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend> -->
+			
 		</filter>
 	</defs>
 </svg>
