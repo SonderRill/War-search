@@ -26,17 +26,46 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
 
-	r.post({
-   	url: `http://api.warface.ru/user/stat/?name=${encodeURIComponent(req.body.name)}&server=${req.body.server}`
-   
-  		},
-  		(err, response, body) => {
-    		if (err) return res.status(500).send({ message: err })
-    			
-    		return res.send(body)
-  		}
-	)
+	r({
+		method:'GET',
+		uri:`http://api.warface.ru/user/stat/?name=${encodeURIComponent(req.body.name)}&server=${req.body.server}`
+		// qs: {
+		// 	name: (req.body.name),
+		// 	server: req.body.server
+		// }
+		
+ 	},
+
+	function (error, response, body) {
+
+  		if (!error && response.statusCode == 200) {
+   		return res.status(200).send(body)
+   	}
+
+   	res.status(400)
+   	return res.send(body)
+
+  })
 })
 
 const PORT = process.env.PORT || 3000
 app.listen(PORT, console.log('Server has been started'))
+
+// function fizzbuzz(n) {
+
+// 	for(let i = 1; i <= n; i++) {
+
+// 		num = '';
+
+// 		if(i % 3 == 0) {
+// 			num = 'fizz'
+// 		}
+// 		if (i % 5 == 0) {
+// 			num += 'buzz'
+// 		}
+
+// 		console.log(num || i);
+// 	}	
+
+// }
+// fizzbuzz(30)

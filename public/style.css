@@ -59,6 +59,16 @@ h3 {
 	text-align: center;
 }
 
+.nick {
+	display: none;
+}
+
+.accuaracy {
+	font-weight: 500;
+	color: #4E5153;
+	margin-top: -10px;
+}
+
 #nickname {
 	color: #2C2E2F;
 	font-size: 50px;
