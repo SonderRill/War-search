@@ -9,6 +9,7 @@ function sep(x) {
 }
 
 
+// данные игрока
 $('.ajax_profile').on('click', () => {
 
 	$('.nick, .dataGamer').hide()
@@ -318,17 +319,13 @@ $('.ajax_profile').on('click', () => {
 
 			$('#accurracy').text(((+pvp_hits + +pve_hits) / ((+pvp_shots + +pve_shots) / 100)).toFixed(2) + '%')
 
-			if($('#game_class').children().children().text() == 'Нет данных') {
-				
-			}
- 
+
 		},
 		error: (err) => {
 			try {
 					$('.nick').show()
 					$('.load, svg, .dataGamer, h6').hide()
 				
-					console.log(err)
 					$('#nickname').text(err.responseJSON.message)
 			} catch(e) {
 				console.log(e)

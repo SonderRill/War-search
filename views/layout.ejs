@@ -13,10 +13,18 @@
 
 	<nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Sonder-War</a>
+      <a href="/" class="brand-logo">Sonder-War</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Рейтинг топ-100</a></li>
+
+        <% if(isTop100) {%>
+          <li class="active"><a href="/">Рейтинг топ-100</a></li>
+        <% } 
+        
+        else { %>
+         <li><a href="/top100">Рейтинг топ-100</a></li>
+        <% } %>
+
         <li><a href="badges.html">Рейтинг кланов</a></li>
         <li><a href="collapsible.html">Ежемесячный рейтинг</a></li>
         
@@ -31,11 +39,28 @@
   </ul>
 
 		<%- body%>
-	
+	<div class="cssload-dots load">
+    <div class="cssload-dot"></div>
+    <div class="cssload-dot"></div>
+    <div class="cssload-dot"></div>
+    <div class="cssload-dot"></div>
+    <div class="cssload-dot"></div>
+  </div>
+
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0 0 0 1 0 0 0 0 0 18 -7" result="goo" ></feColorMatrix>
+      
+      </filter>
+    </defs>
+  </svg>
 	
 	
 	<script src="jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script src="ajax.js"></script>
+  <script src="topAjax.js"></script>
 </body>
 </html>
