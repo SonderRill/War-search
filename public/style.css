@@ -113,7 +113,8 @@ h5 {
 }
 
 .gamers h4 {
-	color: #000
+	color: #000;
+
 }
 
 .gamers h5 {
@@ -123,6 +124,7 @@ h5 {
 .gamer_bord {
 	border-bottom: 3px solid #3CA0D0;
 	margin-top: 35px;
+	margin: 0 auto;
 }
 
 /*load*/
@@ -160,6 +162,18 @@ svg {
 }
 
 
+.obsh {
+	width: 365px;
+	margin: 0 auto;
+}
+
+.pvp {
+	flex-direction: column;
+}
+
+.pve {
+	flex-direction: column;
+}
 
 @media screen and (max-width: 1000px) {
 	.cssload-dot {

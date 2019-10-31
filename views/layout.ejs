@@ -41,8 +41,24 @@
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="/top100">Рейтинг топ-100</a></li>
-    <li><a href="/clans">Рейтинг кланов</a></li>
+    <li><a href="/">Главная</a></li>
+    <% if(isTop100) {%>
+          <li class="active"><a href="/top100">Рейтинг топ-100</a></li>
+        <% } 
+        
+        else { %>
+         <li><a href="/top100">Рейтинг топ-100</a></li>
+        <% } %>
+        
+        
+        
+        <% if(isClans) {%>
+          <li class="active"><a href="/clans">Рейтинг кланов</a></li>
+        <% } 
+        
+        else { %>
+         <li><a href="/clans">Рейтинг кланов</a></li>
+        <% } %>
   </ul>
 
 		<%- body%>
