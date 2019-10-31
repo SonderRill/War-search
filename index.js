@@ -19,5 +19,5 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/', require('./routes/index.js'))
 
 const PORT = process.env.PORT || 3000
-app.listen(PORT, console.log('Server has been started'))
+app.listen(PORT, console.log('Server has been started on' + PORT))
 

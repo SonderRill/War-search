@@ -326,7 +326,8 @@ $('.ajax_profile').on('click', () => {
 					$('.nick').show()
 					$('.load, svg, .dataGamer, h6').hide()
 				
-					$('#nickname').text(err.responseJSON.message)
+					$('#nickname').text(err.responseJSON.message || 'Пользователь не найден')
+					console.log('323',err)
 			} catch(e) {
 				console.log(e)
 				$('#nickname').text('Пользователь не найден')

@@ -108,6 +108,10 @@ h5 {
 	margin-left: 5px
 }
 
+.clans span {
+	color: #FF6372;
+}
+
 .gamers h4 {
 	color: #000
 }
@@ -117,7 +121,8 @@ h5 {
 }
 
 .gamer_bord {
-	border-bottom: 3px solid #FF4400
+	border-bottom: 3px solid #FF4400;
+	margin-top: 35px;
 }
 
 /*load*/
