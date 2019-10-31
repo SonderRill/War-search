@@ -7,6 +7,9 @@
 	font-size: 18px
 }
 
+.container {
+	margin-bottom: 60px;
+}
 
 /*index*/
 h3 {
@@ -91,7 +94,8 @@ h3 {
 
 .title_res {
 	color: #575A5C;
-	font-size: 37px
+	font-size: 37px;
+	margin-top: 20px;
 }
 
 h4 {
@@ -123,8 +127,11 @@ h5 {
 
 .gamer_bord {
 	border-bottom: 3px solid #3CA0D0;
+	margin: 35px auto 0 auto;
+}
+
+.game_class {
 	margin-top: 35px;
-	margin: 0 auto;
 }
 
 /*load*/
@@ -174,6 +181,7 @@ svg {
 .pve {
 	flex-direction: column;
 }
+
 
 @media screen and (max-width: 1000px) {
 	.cssload-dot {
