@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const expressLayouts = require('express-ejs-layouts')
-
+const PORT = process.env.PORT || 3000
 
 
 const app = express()
@@ -18,6 +18,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 // routes
 app.use('/', require('./routes/index.js'))
 
-const PORT = process.env.PORT || 3000
+
 app.listen(PORT, console.log('Server has been started on' + PORT))
 
