@@ -104,12 +104,12 @@ h5 {
 }
 
 .dataGamer span {
-	color: #FF6372;
+	color: #7F0055;
 	margin-left: 5px
 }
 
 .clans span {
-	color: #FF6372;
+	color:#7F0055;
 }
 
 .gamers h4 {
@@ -121,7 +121,7 @@ h5 {
 }
 
 .gamer_bord {
-	border-bottom: 3px solid #FF4400;
+	border-bottom: 3px solid #3CA0D0;
 	margin-top: 35px;
 }
 
