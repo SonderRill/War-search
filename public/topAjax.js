@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-
+    $('.sidenav').sidenav();
+    
     function classSoldier(clas) {
         let valClass = clas == 1 ? 'Штурмовики' :
             clas == 2 ? 'Медики' :

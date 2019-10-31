@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+   $('.sidenav').sidenav();
+
 	function startAjax() {
 
 		$('.clans').html('')
