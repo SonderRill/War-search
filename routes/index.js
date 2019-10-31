@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router()
-const fetch = require('node-fetch')
 const rp = require('request-promise')
-const axios = require('axios')
 
 router.get('/', (req, res) => {
   
