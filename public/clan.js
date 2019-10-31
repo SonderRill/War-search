@@ -29,7 +29,6 @@ $(document).ready(function() {
 
 			error(err) {
 				$('.load, svg').hide()
-				console.log(err)
 
 				$('.clans').html(`<div class='err'><h2 class='center'>Что-то пошло не так</h2>`);
 

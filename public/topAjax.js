@@ -45,7 +45,6 @@ $(document).ready(function() {
 
             },
             error: (err) => {
-                console.log(err)
                 $('.load, svg').hide()
 
 
